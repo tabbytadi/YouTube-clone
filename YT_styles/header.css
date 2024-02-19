@@ -1,0 +1,182 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 56px;
+
+   background-color: white;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: rgb(222, 222, 222);
+
+  z-index: 100;
+}
+
+.img:hover{
+  cursor: pointer;
+}
+
+.leftSection{
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburgerMenu{
+  height: 23px;
+  margin-left: 24px;
+}
+
+.hamburgerMenu:hover{
+  background-color: rgb(230, 230, 230);
+  margin-left: 18px;
+  margin-right: -6px;
+  padding: 6px;
+
+  border-radius: 24px;
+}
+
+.youTubeLogo{
+  height: 20px;
+  margin-left: 24px;
+}
+
+.middleSection{
+  flex: 1;
+  margin-right: 35px;
+  max-width: 470px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar{
+  flex: 1;
+  height: 36px;
+  font-size: 16px;
+  padding: 0.8px 12px;
+  border: 1px solid rgb(192, 192, 192);
+  border-right: none;
+  border-radius: 24px 0px 0px 24px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.075);
+  width: 0;
+  
+  outline: none;
+}
+
+input:focus{
+  border: 1px solid #6626f1;
+}
+
+.searchButton, .voiceSearchButton, .iconContainer{
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton{
+  height: 38.5px;
+  width: 66px;
+  background-color: #f7f7f7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 0px 24px 24px 0px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.025);
+}
+
+.searchButton .hoverText,
+.voiceSearchButton .hoverText,
+.iconContainer .hoverText{
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+
+  position: absolute;
+  background-color: rgb(109, 102, 102);
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  bottom: -50px;
+}
+
+.searchButton:hover .hoverText,
+.voiceSearchButton:hover .hoverText,
+.iconContainer:hover .hoverText{
+  opacity: 0.9;
+}
+
+.searchIcon{
+  height: 25px;
+}
+
+.voiceSearchButton{
+  position: relative;
+
+  height: 40px;
+  width: 40px;
+  background-color: #f8f8f8;
+  border: none;
+  border-color: rgb(192, 192, 192);
+  border-radius: 20px;
+  margin-left: 6px;
+}
+
+.voiceSearchIcon{
+  height: 24px;
+}
+
+.rightSection{
+  width: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.upload,
+.youTubeApps,
+.notifications{
+  height: 24px;
+}
+
+.notificationContainer{
+  position: relative;
+}
+
+.notificationsCount{
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 11px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+
+  padding-left: 5px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+
+  position: absolute;
+  top: -1px;
+  right: -6px;
+}
+
+.myChannel{
+  height: 32px;
+  border-radius: 16px;
+}
