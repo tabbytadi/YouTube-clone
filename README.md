@@ -1,2 +1,2 @@
 # YouTube-clone
-YouTube clone made with HTML and CSS
+YouTube clone project made with HTML and CSS
