@@ -1,22 +1,22 @@
-.thumbnail{
+.thumbnail {
   width: 100%;
   border-radius: 10px;
 }
 
-.thumbnailRow{
+.thumbnailRow {
   margin-bottom: 12px;
   position: relative;
   margin-bottom: 8px;
 }
 
-.videoGrid{
+.videoGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 16px;
 }
 
-.videoTitle{
+.videoTitle {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -24,39 +24,41 @@
   margin-bottom: 10px;
 }
 
-.videoCreator, 
+.videoCreator,
 .videoStats {
   color: rgb(96, 96, 96);
   font-size: 12px;
   margin-top: -2px;
-  
+
 }
-.videoCreator{
+
+.videoCreator {
   margin-bottom: 4px;
 }
 
-.videoInfoGrid{
+.videoInfoGrid {
   display: grid;
   grid-template-columns: 50px 1fr;
   position: relative;
 }
 
-.channelPicture{
+.channelPicture {
   vertical-align: top;
 }
-.videoInfo{
+
+.videoInfo {
   display: inline-block;
 }
 
 
-.pfp{
-  width:36px;
+.pfp {
+  width: 36px;
   border-radius: 40px;
   position: relative;
 }
 
-.pfpSmaller{
-  width:44px;
+.pfpSmaller {
+  width: 44px;
   border-radius: 40px;
   margin-top: 10px;
   margin-left: 5px;
@@ -64,45 +66,47 @@
 }
 
 
-.insidePfp{
+.insidePfp {
   background-color: rgb(248, 248, 248);
   display: grid;
-  padding: 4px;
+  padding: 10px;
   grid-template-columns: 50px 1fr;
   position: absolute;
 
   border-style: none;
   border-radius: 4px;
-  box-shadow: 0px 0px 10px 5px rgba(0,0,0, 0.14);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.14);
 
   opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
+
+  z-index: 300;
 }
 
-.pfpExtention:hover .insidePfp{
+.pfpExtention:hover .insidePfp {
   opacity: 1;
-} 
+}
 
-.creatorName{
+.creatorName {
   font-weight: 700;
 
   width: 180px;
   margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 4px;
 }
 
 .creatorSubscribers {
   color: rgb(96, 96, 96);
-  font-size: 13px; 
+  font-size: 13px;
 
   margin-top: 0;
   margin-left: 5px;
   margin-bottom: 12px;
 }
 
-.videoTime{
+.videoTime {
   font-size: 12px;
   font-weight: 700;
   padding: 4px;
@@ -118,20 +122,19 @@
 
 
 @media (max-width:750px) {
-  .videoGrid{
+  .videoGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width:750px) and (max-width:999x) {
-  .videoGrid{
+  .videoGrid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width:1000px) {
-  .videoGrid{
+  .videoGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
